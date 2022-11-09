@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="params">
+        <label for="a">Параметр "а":
+            <input type="number" id="a" name="a" step="0.05" value="1.05">
+        </label>        
+    
+        <label for="i1">y1, параметр "i":
+            <input type="number" id="i1" name="i1" step="1" value="-1">
+        </label>        
+    
+        <label for="i2">y2, параметр "i":
+            <input type="number" id="i2" name="i2" step="1" value="0">
+        </label>       
+    
+        <label for="i3">y3, параметр "i":
+            <input type="number" id="i3" name="i3" step="1" value="1">
+        </label>
+
+        <div class="range">
+            <label for="start">Начало x:
+                <input type="number" id="start" name="start" step="1" value="0">
+            </label>       
+        
+            <label for="end">Конец x:
+                <input type="number" id="end" name="end" step="1" value="10">
+            </label>
+        </div>
+        
+    </div>
+
+
+    <canvas id="myChart" style="width:100%;max-width:1000px"></canvas>
+<script src="./script.js" defer></script>
+</body>
+</html>
